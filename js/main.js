@@ -35,7 +35,7 @@ navLinks.forEach((element) => {
 });
 async function forecastData(location = "cairo") {
   let request = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=9f10672ebd2e4530889174653240401&q=${location}&days=7`
+    `https://api.weatherapi.com/v1/forecast.json?key=9f10672ebd2e4530889174653240401&q=${location}&days=7`
   );
   let data = await request.json();
   //*Current temp
